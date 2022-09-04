@@ -1,0 +1,50 @@
+.box{
+  text-align: center;
+  margin:0 auto;
+}
+h2{
+  margin:0;
+}
+h5{
+  margin:0;
+  color:#666;
+}
+.calculator{
+  display: inline-block;
+}
+table{
+  width:350px;
+  height:490px;
+  border-collapse: collapse;
+  border-style:hidden;
+  table-layout: fixed;
+}
+td{
+  padding:5px 10px;
+  text-align: center;
+  border:1px solid black;
+  background-color: #ccc;
+  cursor:pointer;
+  font-size:2em;
+}
+.inputarea{
+  background-color: #000;
+  cursor:default;
+}
+.num{
+  background-color:lightskyblue;
+}
+
+input{
+  width:320px;
+  height:65px;
+  font-size:1em;
+  text-align: right;
+  border:none;
+  background-color: #000;
+  color:#fff;
+  cursor:default;
+}
+input:focus{
+  outline:none;
+}

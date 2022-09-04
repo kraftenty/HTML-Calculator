@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" href="favicon.png">
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <div class="box">
+    <div class="header">
+      <p>
+        <h2>간단 계산기</h2>
+        <h5>Made by kraftenty@gmail.com</h5>
+      </p>
+    </div>
+    <div class="calculator">
+      <table>
+        <tr>
+          <td class="inputarea"colspan="4">
+            <input class="inputarea" type="text" id="display" value="0" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" onclick="reset()" id="clear">AC</td>
+          <td onclick="addChar('/')">/</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="addChar(7)">7</td>
+          <td class="num" onclick="addChar(8)">8</td>
+          <td class="num" onclick="addChar(9)">9</td>
+          <td onclick="addChar('*')">x</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="addChar(4)">4</td>
+          <td class="num" onclick="addChar(5)">5</td>
+          <td class="num" onclick="addChar(6)">6</td>
+          <td onclick="addChar('-')">-</td>
+        </tr>
+        <tr>
+          <td class="num" onclick="addChar(1)">1</td>
+          <td class="num" onclick="addChar(2)">2</td>
+          <td class="num" onclick="addChar(3)">3</td>
+          <td onclick="addChar('+')">+</td>
+        </tr>
+        <tr>
+          <td class="num" colspan="2" onclick="addChar(0)">0</td>
+          <td class="num" onclick="addChar('.')">.</td>
+          <td onclick="calculate()">=</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 참고한 블로그:https://blog.cordelia273.space/32 -->
+<!-- 제작:kraftenty@gmail.com -->
