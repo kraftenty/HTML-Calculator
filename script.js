@@ -1,4 +1,5 @@
 var numberClicked=false;
+var tempChar;
 
 function addChar(char){
   changeClearButton(1);
@@ -6,7 +7,11 @@ function addChar(char){
 
   if((numberClicked==false&&isNaN(char)==false)||numberClicked==true){
     if(display.value==0&&!(isNaN(char))){
-      display.value=char;
+      if(tempChar=='.'){
+        display.value=display.value+char;
+      } else{
+        display.value=char;
+      }
     }
     else{
       display.value=display.value+char;
@@ -18,6 +23,7 @@ function addChar(char){
   } else{
     numberClicked=true;
   }
+  tempChar=char;
 }
 
 function calculate(){
